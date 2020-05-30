@@ -1,0 +1,3 @@
+#define SCREEN_WIDTH 244
+#define SCREEN_HEIGHT 288
+#define MAGNIFICATION 3
