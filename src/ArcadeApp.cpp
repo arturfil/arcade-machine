@@ -12,5 +12,9 @@ int main(int argc, const char *argv[]) {
   std::cout << vector << std::endl;
   std::cout << "This vector is negated with the uniray operator '-' :\n" << -vector << std::endl;
 
+  Vec2D resultVec = 3 * vector;
+
+  std::cout << resultVec << std::endl;
+
   return 0;
 }
