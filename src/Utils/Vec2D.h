@@ -46,6 +46,23 @@ class Vec2D {
     Vec2D operator+=(const Vec2D& vec);
     Vec2D operator-=(const Vec2D& vec);
 
+    float Mag2() const;
+    float Mag() const;
+
+    Vec2D GetUnitVec() const;
+    Vec2D& Normalize();
+
+    float Distance(const Vec2D& vec) const;
+    float Dot(const Vec2D& vec) const;
+
+    Vec2D ProjectOnto(const Vec2D& vec2) const;
+    Vec2D Reflect(const Vec2D& normal) const;
+    Vec2D RotationResult(float angle, const Vec2D& aroundPoint) const;
+    void Rotate(float angle, const Vec2D& aroundPoint);
+
+
+    float AngleBetween(const Vec2D& vec2) const;
+
     friend Vec2D operator*(float scalar, const Vec2D& vec);
 
   private:
