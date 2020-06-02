@@ -4,7 +4,7 @@ EXEC=arcade
 all: build run
 
 build: 
-	$(CXX) ./src/*.cpp ./src/Utils/*.cpp \
+	$(CXX) ./src/*.cpp ./src/Utils/*.cpp  ./src/Graphics/*.cpp \
 	-lSDL2 -lSDL2_image -lSDL2_mixer -lSDL2_ttf \
 	-o $(EXEC)
 
